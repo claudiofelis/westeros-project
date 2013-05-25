@@ -4,19 +4,47 @@
    Author's custom styles
    ========================================================================== */
 
+   /*BG TEMPORARIO*/
+
+   body{background:  url('../img/bg.jpg') no-repeat ; background-size:cover; }
+   body.result{background-image: none;}
+.navbar-fixed-top .container{width: 1008px}
+
+.navbar .nav {height: 60px;}
+.navbar.navbar{background-color: #2a2a2a; border-bottom: 3px solid #b6b6b6;}
+.navbar .nav li.active{ background-color: #fff; border:2px solid #b8b8b8; border-top: 0;height:68px;}
+.navbar .nav li.active a { color: #000}
+
+.search-box{width: 100%; background-color:rgba(246,246,246,0.95); height: 155px; margin-top:-77px; position: absolute; top: 50%}
+.search-box .container{width: 440px;font-family: arial; margin-top: 24px;}
+
+.search-box label{font-size: 18px; color: #3f3f3f; }
 
 
+.search-box input,.search-box button{height: 47px; padding-top: 5px ;padding-bottom: 5px ; display: inline-block;}
+.search-box input:focus{outline: none}
+.search-box input[type=text]{
+	width: 297px;
+	background-color: #272727;
+	color: #f6f6f6;
+}
+.search-box input[type=submit]{
+	width: 82px;
+	height: 59px;
+	background: #afafaf;
+	font-size: 34px;
+	text-transform: uppercase;
+	color: #1f1e1e;
 
+}
+.container{width: 1008px;}
 
-
-
-
-
-
-
-
-
-
-
-
-
+hr{margin: 10px 0; border-top: 0; border-bottom-color: rgba(255,255,255,0.5);}
+footer{position:absolute; bottom: 1px; color: #fff; width: 100%;}
+.result-content{margin: 10px 0; display: none;}
+.result-content h1{font-size: 60px; ;line-height: 70px; margin-bottom: 10px }
+.result-content .row{margin-top: 10px;}
+.result-content .desc{font-size: 16px;line-height: 30px;}
+.result-content .img1{overflow: hidden; height: 490px}
+.result-content .img1 img{width: 669px;max-width: initial;}
+.result-content .geo span{font-weight: bold}

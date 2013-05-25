@@ -4418,10 +4418,11 @@ input[type="submit"].btn.btn-mini {
   float: left;
   padding: 15px 20px 15px;
   margin-left: -20px;
-  font-size: 20px;
+  font-size: 36px;
   font-weight: 200;
   color: #ffffff;
   text-shadow: 0 1px 0 #080808;
+  line-height: 30px;
 }
 
 .navbar .brand:hover,
@@ -4601,6 +4602,8 @@ input[type="submit"].btn.btn-mini {
   display: block;
   float: left;
   margin: 0 10px 0 0;
+  font-family: arial,verdana,sans-serif;
+  font-size: 18px;
 }
 
 .navbar .nav.pull-right {
@@ -4614,10 +4617,10 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .nav > li > a {
   float: none;
-  padding: 15px 15px 15px;
+  padding: 20px 15px;
   color: #ffffff;
   text-decoration: none;
-  text-shadow: 0 1px 0 #080808;
+  /*text-shadow: 0 1px 0 #080808;*/
 }
 
 .navbar .nav .dropdown-toggle .caret {

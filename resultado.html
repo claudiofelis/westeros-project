@@ -1,16 +1,17 @@
+
 <!DOCTYPE html>
 <html class="no-js">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>YoCity</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
         <style>
             body {
-                padding-top: 20px;
+                padding-top: 60px;
                 padding-bottom: 40px;
             }
         </style>
@@ -19,21 +20,68 @@
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
-    <body>
-        <header>
-            <h3>Westeros Project</h3>
-        </header>
+    <body class="result">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
 
-            <div class="result conteiner">
-                <h1>Cidade</h1>
-                <p class="desc"></p>
-                <img src="" class="img-t" alt="">
+        <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
+
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="index.html">YoCity</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right">
+                            <li class="active"><a href="#search">seach</a></li>
+                            <li><a href="#explore">explore</a></li>
+                            <li><a href="#share">share</a></li>
+                        </ul>
+                        
+                    </div><!--/.nav-collapse -->
+                </div>
             </div>
+        </div>
+       
+        
+         <div class="result-content">
+            <div class="container">
+                <h1>Cidade</h1>
+                <div class="row">
+                  <div class="span3">
+                    <p class="desc">Desc</p>
+                    <ul class="geo unstyled" >
+                        <h3>More details</h3>
+                        <li class="pop">Population: <span></span></li>
+                        <li class="state">State: <span></span></li>
+                        <li class="country">Country: <span></span></li>
+                    </ul>
+                  </div>
 
-        <footer>
-             <p>&copy; Company 2012</p>
-        </footer>
+                  <div class="span7 img1"><img src="http://4.bp.blogspot.com/-jAUKlp5S_Sw/TmvviIOOiSI/AAAAAAAAAyM/VKO2nqaQbRQ/s1600/olinda.jpg" alt=""></div>
+                </div>
+                <div class="row"></div>
+                
+                
+             </div>
+                
+        </div>
+     
+            
 
+            <footer>
+                <hr>
+                <div class="container ">
+                <p class="pull-right">&copy; Westeros-Project 2012</p>
+                </div>
+            </footer>
+
+         <!-- /container -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     
@@ -42,7 +90,14 @@
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/vendor/APP.js"></script>
         
-        <script src="js/main.js"></script>
+        <script src="js/APP.City.js"></script>
         <script>APP.iniciar()</script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
     </body>
 </html>

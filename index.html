@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>YoCity</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
         <style>
             body {
                 padding-top: 60px;
@@ -18,51 +18,74 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
-
-    <style>
-      input {
-        border: 1px solid  rgba(0, 0, 0, 0.5);
-      }
-      input.notfound {
-        border: 2px solid  rgba(255, 0, 0, 0.4);
-      }
-    </style>
-
     </head>
     <body>
-        <header>
-            <h3>Westeros Project</h3>
-        </header>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
 
-            <div class="search-conteiner">
-                <form class="well form-search" action="resultado.html" method="get">
-                    <input type="text" name="city" id="search" class="input-medium search-query">
-                    <button type="submit" class="btn">Search</button>
-                </form>
+        <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
+
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#">YoCity</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right">
+                            <li class="active"><a href="#search">seach</a></li>
+                            <li><a href="#explore">explore</a></li>
+                            <li><a href="#share">share</a></li>
+                        </ul>
+                        
+                    </div><!--/.nav-collapse -->
+                </div>
             </div>
-            <div id="panel" style="margin-left: -260px">
-      <input id="searchTextField" type="text" size="50">
-      <input type="radio" name="type" id="changetype-all" checked="checked">
-      <label for="changetype-all">All</label>
+        </div>
+        <div class="search-box">
+            <div class="container">
+                <form action="resultado.html" method="get">
+                    <label for="city">Choose your city:</label>
+                    <div class="input-append">
+                      <input type="text" name="city" id="city">
+                      <input type="submit" class="btn" value="go">
+                      <!-- <button class="btn" type="button">Go</button> -->
+                    </div>
+                </form>
+             </div>
+            
+        </div>
+        
 
-      <input type="radio" name="type" id="changetype-establishment">
-      <label for="changetype-establishment">Establishments</label>
+     
+            
 
-      <input type="radio" name="type" id="changetype-geocode">
-      <label for="changetype-geocode">Geocodes</lable>
-    </div>
-    <div id="map-canvas"></div>
-        <footer>
-             <p>&copy; Company 2012</p>
-        </footer>
+            <footer>
+                <hr>
+                <div class="container ">
+                <p class="pull-right">&copy; Westeros-Project 2012</p>
+                </div>
+            </footer>
 
+         <!-- /container -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
 
+        <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
     </body>
 </html>
